@@ -59,19 +59,19 @@ body{
 }
 .sign-in{
   margin-top: 0px;
-   border: 1px solid #4285f4;
-   font-weight: bold;
-   background: #4285f4;
-   background-origin: padding-box;
-   background-clip: border-box;
-   background: linear-gradient (top, #4387fd, #4683ea);
-   background-size: auto;
-   border-image-repeat: stretch;
-   text-align: right;
-   line-height: 27px;
-   border-radius: 2px;
-   padding-left: 12px;
-   padding-right: 12px;
+  border: 1px solid #4285f4;
+  font-weight: bold;
+  background: #4285f4;
+  background-origin: padding-box;
+  background-clip: border-box;
+  background: linear-gradient (top, #4387fd, #4683ea);
+  background-size: auto;
+  border-image-repeat: stretch;
+  text-align: right;
+  line-height: 27px;
+  border-radius: 2px;
+  padding-left: 12px;
+  padding-right: 12px;
 }
 .nav-content ul li .sign-in a{
   color: #fff;
@@ -89,32 +89,55 @@ body{
   position: fixed;
   top: 201px;
 }
-.search-area{
+.search-field{
   position: relative;
   width: 584px;
   display: flex;
-  margin: 20px auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 26px;
   flex-direction: column;
 }
-form input[type=search] {
-    box-sizing: border-box;
-    display: inline-block;
-    align-items: flex-end;
-    z-index: 0;
-    width: 584px;
-    height: 26px;
-    margin: 0 0 8px 0;
-    padding: 19px 5px;
-    outline-color: #0066CC;
-    direction: ltr;
-    font-size: 13px;
-    border: 1px solid rgb(217, 217, 217);
-    border-radius: 2px;
-    border-color: rgb(217,217,217);
+form input[type=search]{
+  position: relative;
+  box-sizing: border-box;
+  display: inline-block;
+  align-items: flex-end;
+  width: 586px;
+  height: 26px;
+  margin: 0 0 8px 0;
+  padding: 19px 5px;
+  outline-color: #4285f4;
+  direction: ltr;
+  font-size: 13px;
+  border: 1px solid rgb(217, 217, 217);
+  border-radius: 2px;
+  border-color: rgb(217,217,217);
   }
+.search-field:hover span{
+  display:inline-block;
+}
+span{
+  background: none repeat scroll 0 0 black;
+  border: 1px solid black;
+  color: white;
+  width:45px;
+  font-size: 13px;
+  margin:auto;
+  position: absolute;
+  text-align: center;
+  top: 35px;
+  left:60px;
+  display:none;
+  padding:0px;
+}
 .button-area li{
   text-decoration: none;
   display: inline-block;
+}
+button:hover{
+  color: #222222;
+  border: 1px solid rgb(217, 217, 217);
 }
 .new-mic img{
   position: absolute;
@@ -135,6 +158,7 @@ button{
   border: 1px solid #f2f2f2;
   border-radius: 2px;
   color: #757575;
+  font-family: arial, sans-serif;
   font-size: 13px;
   font-weight: bold;
   margin: 0px 2px;
@@ -147,16 +171,19 @@ button{
 .footer{
 	background: #f2f2f2;
 	border-top: 1px solid #e4e4e4;
-	line-height: 20px;
+	height: 28px;
 	bottom: 0;
 	left: 0;
 	position: fixed;
 	right: 0;
-  padding-bottom: 10px;
+  padding-bottom: 12px;
   margin-left: -32px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.footer ul{
+  padding-bottom: 6px !important;
 }
 #footer-left ul li{
   display: inline-block;
@@ -171,21 +198,12 @@ button{
 #footer-right ul li:first-of-type{
   padding-right: 27px;
 }
-#footer-left ul li a{
+.footer ul li a{
  text-decoration: none;
  color: #666;
  font-family: arial, sans-serif;
  font-size: 13px;
 }
-#footer-right ul li a{
-  text-decoration: none;
-  color: #666;
-  font-family: arial, sans-serif;
-  font-size: 13px;
-}
-#footer-left ul li a:hover{
-  text-decoration: underline;
-}
-#footer-right ul li a:hover{
+#footer ul li a:hover{
   text-decoration: underline;
 }
